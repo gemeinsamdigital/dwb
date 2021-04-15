@@ -1,0 +1,147 @@
+<style>
+.wpcf7 {
+  width: 100%;
+  text-align: left;
+}
+.wpcf7-form textarea {
+  font-family: Roboto;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 300 !important;
+  color: #0a0a0a;
+}
+.wpcf7-form select {
+  font-family: Roboto;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  line-height: 20px !important;
+  width: 80%;
+}
+.wpcf7-submit{
+  background-color: #23acc8;
+  color: #ffffff;
+  padding: 20px 28px;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: none;
+  border-radius: 3px;
+}
+.wpcf7-response-output{
+  text-align: center;
+  border: 0 !important;
+  width: 100%;
+  float: left;
+}
+.toggle-radio {
+  display: flex;
+  justify-content: center;
+}
+.toggle-radio input[type=radio] {
+  display: none;
+}
+.toggle-radio .wpcf7-list-item.first input[type=radio] + .wpcf7-list-item-label {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding-left: 20px;
+}
+.toggle-radio .wpcf7-list-item.last input[type=radio] + .wpcf7-list-item-label {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-right: 20px;
+}
+.toggle-radio .wpcf7-list-item:not(.last) input[type=radio] + .wpcf7-list-item-label {
+  border-right: 1px solid #ffffff;
+}
+.toggle-radio .wpcf7-list-item input[type=radio] + .wpcf7-list-item-label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0;
+  border: 1px #ffffff;
+  background-color: #C0E6EE;
+  padding: 2px 15px 2px 15px;
+  color: #80CFDF;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.toggle-radio .wpcf7-list-item input[type=radio]:checked + .wpcf7-list-item-label {
+  background-color: #019fc0;
+  color: #ffffff;
+}
+.toggle-radio .wpcf7-list-item {
+  margin-left: 0
+}
+.digitalcheck_form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mail-input {
+  width: 80%;
+  font-family: Roboto;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  color: #0a0a0a !important;
+}
+</style>
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Ich bin insgesamt zufrieden mit den Inhalten des Online-Kurses “Künstliche Intelligenz”. </label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[radio zufriedenheit-inhalte use_label_element class:toggle-radio "1" "2" "3" "4" "5"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Ich würde diesen Online-Kurs zu Künstlicher Intelligenz anderen Unternehmen weiterempfehlen.</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[radio werde-weiterempfehlen use_label_element class:toggle-radio "1" "2" "3" "4" "5"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Dieser Online-Kurs hat meinen Wissensstand zu Künstlicher Intelligenz erweitert.</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[radio wissensstabnd-erweitert use_label_element class:toggle-radio "1" "2" "3" "4" "5"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Ich werde die gewonnenen Erkenntnisse in mein Unternehmen einbringen.</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[radio erkenntnisse-einbringbar use_label_element class:toggle-radio "1" "2" "3" "4" "5"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Der Online-Kurs hat mir geholfen, Potenziale und Gestaltungsoptionen meines Unternehmens im Bereich der Künstlichen Intelligenz besser einschätzen zu können. </label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[radio bessere-einschaetzung-potenziale use_label_element class:toggle-radio "1" "2" "3" "4" "5"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Aus welchem der drei Videos hat sich der größte Mehrwert für Ihr Unternehmen ergeben?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[select* groesster_mehrwert first_as_label "Bitte auswählen" "Video #1: Was ist KI?" "Video #2: Anwendungsbereiche für KMU" "Video #3: Systematischer Einstieg in Arbeit mit KI" "Ich habe bisher nur ein Video angesehen"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Welche Herausforderungen Ihres Unternehmens im Bereich der Künstlichen Intelligenz wurden in unserem Online-Kurs nicht adressiert?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[textarea fehlende-inhalte class:content-text]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Haben Sie noch weitere Anmerkungen für uns?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[textarea weitere-anmerkungen class:content-text]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Wie viele Beschäftigte hat Ihr Unternehmen?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[select* anzahl-beschaeftigte first_as_label "Bitte auswählen" "1-9" "10-49" "50-99" "100-249" "250-499" "500 oder mehr"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Welche Rolle üben Sie in Ihrem Unternehmen aus?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[select* rolle first_as_label "Bitte auswählen" "Geschäftsleitung" "Personalleitung" "Führungskraft" "Mitarbeitende"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">In welcher Branche ist Ihr Unternehmen hauptsächlich tätig?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[select* branche first_as_label "Bitte auswählen" "Handel" "Produzierendes Gewerbe" "Dienstleistung" "Baugewerbe" "Politik und Bildung" "Sonstiges"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Wo befindet sich der Sitz Ihres Unternehmens?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[select* unternehmenssitz first_as_label "Bitte auswählen" "Berlin" "Brandenburg" "anderes Bundesland" "außerhalb Deutschlands"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Wann wurde Ihr Unternehmen gegründet?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[select* gruendungszeitpunkt first_as_label "Bitte auswählen" "vor weniger als 5 Jahren" "vor 5-10 Jahren" "vor 10-49 Jahren" "vor mehr als 50 Jahren"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Stehen Sie zur Verfügung, uns in einem 10-minütigen Telefonat von Ihren Erfahrungen mit unserem Online-Kurs zu berichten?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[email email placeholder class:mail-input "Ihre E-Mailadresse"]</div></div>
+
+<div class="wpb_row vc_row vc_row-fluid">
+<div class="vc_col-sm-6 digitalcheck_form"><label style="font-weight: 300;">Wie sind Sie auf unseren Online-Kurs KI aufmerksam geworden?</label></div>
+<div class="vc_col-sm-6 digitalcheck_form" align="center">[select* quelle first_as_label "Bitte auswählen" "Einladung per Mail" "www.gemeinsam-digital.de" "Newsletter" "Kontakte/ Empfehlung" "Social Media" "Online-Recherche" "Sonstiges"]</div></div>
+
+[hidden type-user-id id:type_user_id ""]
+
+<div class="vc_col-sm-12 digitalcheck_form" align="center">[submit "Senden"]</div>

@@ -1,0 +1,80 @@
+<style>
+.wpcf7 {
+  width: 100%;
+  text-align: center;
+}
+.wpcf7-form textarea {
+  font-family: Roboto;
+  border-radius: 15px;
+  font-size: 13px;
+  color: #767676;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wpcf7-submit{
+  background-color: #23acc8;
+  color: #ffffff;
+  padding: 20px 28px;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: none;
+  border-radius: 3px;
+}
+.wpcf7-response-output{
+  color: #ffffff;
+  text-align: center;
+  border: 0 !important;
+  width: 100%;
+  float: left;
+}
+.toggle-radio {
+  display: flex;
+  justify-content: center;
+}
+.toggle-radio input[type=radio] {
+  display: none;
+}
+.toggle-radio .wpcf7-list-item.first input[type=radio] + .wpcf7-list-item-label {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding-left: 20px;
+}
+.toggle-radio .wpcf7-list-item.last input[type=radio] + .wpcf7-list-item-label {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-right: 20px;
+}
+.toggle-radio .wpcf7-list-item:not(.last) input[type=radio] + .wpcf7-list-item-label {
+  border-right: 1px solid #023233;
+}
+.toggle-radio .wpcf7-list-item input[type=radio] + .wpcf7-list-item-label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0;
+  border: 1px #ffffff;
+  background-color: #C0E6EE;
+  padding: 2px 15px 2px 15px;
+  color: #80CFDF;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.toggle-radio .wpcf7-list-item input[type=radio]:checked + .wpcf7-list-item-label {
+  background-color: #019fc0;
+  color: #ffffff;
+}
+.toggle-radio .wpcf7-list-item {
+  margin-left: 0
+}
+</style>
+
+<div class="vc_col-sm-2 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><span style="color: #ffffff;">Ich stimme überhaupt nicht zu.</span></div>
+<div class="vc_col-sm-4" style="margin 20 0 20 0;">[radio trifft-unternehmensrealitaet use_label_element class:toggle-radio "1" "2" "3" "4" "5"]</div>
+<div class="vc_col-sm-2"><span style="color: #ffffff;">Ich stimme voll und ganz zu.</span></div>
+
+[textarea kommentar class:content-text placeholder "Ihr Kommentar ..."]
+
+[hidden current-page id:current_page ""]
+
+[hidden type-user-id id:type_user_id ""]
+
+<div class="vc_col-sm-2 vc_col-lg-offset-9 vc_col-md-offset-9 vc_col-sm-offset-9">[submit "Abschicken"]</div>

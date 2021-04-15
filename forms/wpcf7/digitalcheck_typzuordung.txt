@@ -1,0 +1,17 @@
+<div id="evaliation_form" style="display: none">
+[hidden evaluation_1_form "0"]
+[hidden evaluation_2_form "0"]
+[hidden evaluation_3_form "0"]
+[hidden evaluation_4_form "0"]
+[hidden evaluation_5_form "0"]
+[hidden evaluation_6_form "0"]
+[hidden evaluation_7_1_form "0"]
+[hidden evaluation_7_2_form "0"]
+[hidden evaluation_8_form "0"]
+[hidden evaluation_9_form "0"]
+[hidden evaluation_10_form "0"]
+
+[hidden type-user-id id:type_user_id ""]
+
+[submit "Abschicken"]
+</div>
