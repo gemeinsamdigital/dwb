@@ -1,4 +1,4 @@
-﻿Dieses Repositorium enthält technische und konzeptionelle Grundlagen des interaktiven des:
+﻿Dieses Repositorium enthält technische und konzeptionelle Grundlagen des interaktiven 
 Online-Guides Digitale Weiterbildung (https://gemeinsam-digital.de/online-guide-digitale-weiterbildung/) sowie des Online-Kurses Künstliche Intelligenz (https://gemeinsam-digital.de/online-kurs-kuenstliche-intelligenz/). 
 
 Die beiden Webangebote bilden die zentralen Ergebnisse des im April 2021 abgeschlossenen Arbeitspaketes “Digitale Weiterbildung” im Rahmen von _Gemeinsam digital (https://gemeinsam-digital.de/). 
